@@ -16,5 +16,4 @@
 
     - set_stats:
         data:
-          _list_to_pass: "{{ list_to_pass }}"
-          host_groups: "{{ group_list }}"
+          _var_per_host: "{{ _var_per_host }}"
