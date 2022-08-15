@@ -8,7 +8,7 @@
       assert:
         that:
           - specific_task_succeed == True
-          - list_to_pass is defined
+          - _var_per_host is defined
           - group_list is defined
         fail_msg: "Seems that something did not go correctly. Please contact support."
 
