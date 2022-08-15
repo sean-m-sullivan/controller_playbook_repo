@@ -8,6 +8,6 @@
       ansible.builtin.debug:
         msg: "An item: {{ item }}"
       with_items:
-        - "{{ awx_job_id }}"
-        - "{{ tower_job_id }}"
-        - "{{ controller_job_id }}"
+        - "{{ awx_job_id | default('') }}"
+        - "{{ tower_job_id | default('') }}"
+        - "{{ controller_job_id | default('') }}"
