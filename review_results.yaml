@@ -9,7 +9,6 @@
         that:
           - specific_task_succeed == True
           - _var_per_host is defined
-          - group_list is defined
         fail_msg: "Seems that something did not go correctly. Please contact support."
 
     - debug:
