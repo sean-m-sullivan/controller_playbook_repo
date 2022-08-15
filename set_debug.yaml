@@ -10,4 +10,4 @@
       with_items:
         - "{{ awx_job_id | default('') }}"
         - "{{ tower_job_id | default('') }}"
-        - "{{ controller_job_id | default('') }}"
+        - "{{ awx_workflow_job_id | default('') }}"
