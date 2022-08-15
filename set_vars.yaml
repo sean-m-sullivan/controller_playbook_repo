@@ -13,7 +13,7 @@
       set_stats:
         data:
           _var_per_host: "{{ var_per_host | default({}) | combine({inventory_hostname: show_vars }) }}"
-          specific_task_succeed: True
+          Boolean: True
           abc_var: none
 
     - debug:
