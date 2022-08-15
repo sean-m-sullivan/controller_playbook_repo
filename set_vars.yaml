@@ -18,3 +18,5 @@
 
     - debug:
         var: show_vars
+    - debug:
+        var: specific_task_succeed
