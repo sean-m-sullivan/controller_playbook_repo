@@ -1,0 +1,13 @@
+---
+- name: "Set per host stats"
+  hosts: "{{ host_groups }}"
+  gather_facts: no
+
+  tasks:
+    - name: "loop through list"
+      ansible.builtin.debug:
+        msg: "An item: {{ item }}"
+      with_items:
+        - "{{ awx_job_id }}"
+        - "{{ tower_job_id }}"
+        - "{{ controller_job_id }}"
