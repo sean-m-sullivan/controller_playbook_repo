@@ -6,4 +6,4 @@
   tasks:
 
     - debug:
-        msg: "{{ var_per_host[inventory_hostname] }}"
+        msg: "{{ _var_per_host[inventory_hostname] }}"
